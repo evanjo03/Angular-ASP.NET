@@ -20,5 +20,11 @@
       <td>{{ forecast.temperatureF }}</td>
       <td>{{ forecast.summary }}</td>
     </tr>
+    <tr *ngFor="let thing of things">
+      <td>{{ thing.dateFormatted }}</td>
+      <td>{{ thing.temperatureC }}</td>
+      <td>{{ thing.temperatureF }}</td>
+      <td>{{ thing.summary }}</td>
+    </tr>
   </tbody>
 </table>
